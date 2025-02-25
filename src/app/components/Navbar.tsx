@@ -3,13 +3,13 @@
 import Link from "next/link";
 import { useContext, useState, useEffect, useRef } from "react";
 import { AuthContext } from "../context/AuthContext";
-import { useRouter, usePathname } from "next/navigation";
+import {  usePathname } from "next/navigation";
 
 export default function Navbar() {
   const authContext = useContext(AuthContext);
   const user = authContext?.user;
   const logout = authContext?.logout;
-  const router = useRouter();
+
   const pathname = usePathname(); // ✅ Correct way to get the current route
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);

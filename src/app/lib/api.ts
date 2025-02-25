@@ -53,22 +53,4 @@ export const logoutUser = async () => {
   };
 
 
-// export const getRentalCars = async () => {
-//     try {
-//       const res = await fetch(`${API_BASE_URL}/cars/rental-cars`, {
-//         method: "GET",
-//         headers: { "Content-Type": "application/json" },
-//         credentials: "include",
-//       });
   
-//       if (!res.ok) {
-//         const errorData = await res.json();
-//         throw new Error(errorData.message || "Failed to fetch rental cars");
-//       }
-  
-//       return res.json();
-//     } catch (error) {
-//       console.error("Error fetching rental cars:", error);
-//       throw error;
-//     }
-//   };

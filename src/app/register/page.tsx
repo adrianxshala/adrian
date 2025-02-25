@@ -17,10 +17,10 @@ export default function SignupPage() {
     setError("");
 
     try {
-      await registerUser({ fullName, email, username, password }); // Call registerUser with the required fields
-      router.push("/login"); // Redirect after successful registration
+      await registerUser({ fullName, email, username, password });
+      router.push("/login");
     } catch (err) {
-      setError("Registration failed. Please try again."); // Handle registration errors
+      setError("Registration failed. Please try again."); 
     }
   };
 
